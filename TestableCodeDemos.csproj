@@ -80,6 +80,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Module3\Extras\PrintInvoiceCommandFactory.cs" />
+    <Compile Include="Module3\Extras\Program1.cs" />
+    <Compile Include="Module3\Extras\Program2.cs" />
+    <Compile Include="Module3\Extras\Program3.cs" />
+    <Compile Include="Module3\Extras\Program4.cs" />
+    <Compile Include="Module3\Before\InvoiceWriter.cs" />
+    <Compile Include="Module3\Before\PrintInvoiceCommand.cs" />
+    <Compile Include="Module3\Shared\Database.cs" />
+    <Compile Include="Module3\Shared\IDatabase.cs" />
+    <Compile Include="Module3\Shared\Invoice.cs" />
+    <Compile Include="Module3\Shared\IPageLayout.cs" />
+    <Compile Include="Module3\Shared\IPrinter.cs" />
+    <Compile Include="Module3\Shared\PageLayout.cs" />
+    <Compile Include="Module3\Shared\Printer.cs" />
     <Compile Include="Project1\Before\Progra.cs" />
     <Compile Include="Project2\After\DateTimeWrapper.cs" />
     <Compile Include="Project2\After\IDatabase.cs" />
@@ -100,7 +114,9 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Module3\After\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
