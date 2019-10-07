@@ -80,9 +80,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Project3\After\IInvoiceWriter.cs" />
+    <Compile Include="Project3\After\IPrintInvoiceCommand.cs" />
+    <Compile Include="Project3\After\PrintInvoiceCommand.cs" />
+    <Compile Include="Project3\Extras\PrintInvoiceCommandFactory.cs" />
+    <Compile Include="Project3\Extras\Program1.cs" />
+    <Compile Include="Project3\Extras\Program2.cs" />
+    <Compile Include="Project3\Extras\Program3.cs" />
+    <Compile Include="Project3\Extras\Program4.cs" />
+    <Compile Include="Project3\Before\InvoiceWriter.cs" />
+    <Compile Include="Project3\Before\PrintInvoiceCommand.cs" />
+    <Compile Include="Project3\Shared\Database.cs" />
+    <Compile Include="Project3\Shared\IDatabase.cs" />
+    <Compile Include="Project3\Shared\Invoice.cs" />
+    <Compile Include="Project3\Shared\IPageLayout.cs" />
+    <Compile Include="Project3\Shared\IPrinter.cs" />
+    <Compile Include="Project3\Shared\PageLayout.cs" />
+    <Compile Include="Project3\Shared\Printer.cs" />
+    <Compile Include="Project1\Before\Progra.cs" />
+    <Compile Include="Project2\After\DateTimeWrapper.cs" />
+    <Compile Include="Project2\After\IDatabase.cs" />
+    <Compile Include="Project2\After\IPrintInvoiceCommand.cs" />
+    <Compile Include="Project2\After\NewPrintInvoiceCommand.cs" />
+    <Compile Include="Project2\After\Printer.cs" />
+    <Compile Include="Project2\Before\Printer.cs" />
+    <Compile Include="Project2\Before\PrintInvoiceCommand.cs" />
+    <Compile Include="Project2\Shared\Database.cs" />
+    <Compile Include="Project2\Shared\Invoice.cs" />
     <Compile Include="Project1\After\Calculator.cs" />
-    <Compile Include="Project1\Before\Program.cs" />
-    <Compile Include="Project1\Tests\CalculatorTests.cs" />
+    <Compile Include="Project1\After\Discount.cs" />
+    <Compile Include="Project1\After\Parts.cs" />
+    <Compile Include="Project1\After\Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
