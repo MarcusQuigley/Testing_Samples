@@ -7,12 +7,12 @@ using TestableCodeDemos.Module3.Shared;
 
 namespace TestableCodeDemos.Project3.After
 {
-    public class PrintInvoiceCommand
+    public class PrintInvoiceCommand : IPrintInvoiceCommand
     {
         readonly IDatabase _database;
         readonly IInvoiceWriter _invoiceWriter;
 
-        public PrintInvoiceCommand(IDatabase database, 
+        public PrintInvoiceCommand(IDatabase database,
             IInvoiceWriter invoiceWriter)
         {
             _database = database;

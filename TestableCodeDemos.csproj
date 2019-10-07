@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Project3\After\IInvoiceWriter.cs" />
+    <Compile Include="Project3\After\IPrintInvoiceCommand.cs" />
     <Compile Include="Project3\After\PrintInvoiceCommand.cs" />
     <Compile Include="Project3\Extras\PrintInvoiceCommandFactory.cs" />
     <Compile Include="Project3\Extras\Program1.cs" />
