@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Ninject;
 using Ninject.Extensions.Conventions;
-
+using TestableCodeDemos.Project3.After;
 
 namespace TestableCodeDemos.Module3.Extras
 {

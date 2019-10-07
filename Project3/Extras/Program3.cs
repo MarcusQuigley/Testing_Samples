@@ -4,6 +4,7 @@ using System.Linq;
 using Ninject;
 
 using TestableCodeDemos.Module3.Shared;
+using TestableCodeDemos.Project3.After;
 
 namespace TestableCodeDemos.Module3.Extras
 {
