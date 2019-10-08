@@ -8,20 +8,17 @@ namespace TestableCodeDemos.Module4.Before
 {
     public class PrintInvoiceCommand : IPrintInvoiceCommand
     {
-        private readonly Container _container;
         readonly IDatabase _database;
         readonly IInvoiceWriter _invoiceWriter;
-        readonly ISession _session;
         readonly IUser _user;
 
-        public PrintInvoiceCommand(IDatabase database, 
-                                   IInvoiceWriter invoiceWriter, 
-                                   ISession session,
-                                   IUser user)
+        public PrintInvoiceCommand(
+            IDatabase database,
+            IInvoiceWriter invoiceWriter,
+            IUser user)
         {
             _database = database;
             _invoiceWriter = invoiceWriter;
-            _session = session;
             _user = user;
         }
 
@@ -30,28 +27,8 @@ namespace TestableCodeDemos.Module4.Before
             var invoice = _database.GetInvoice(invoiceId);
 
             _invoiceWriter.Write(invoice);
-            //invoice.LastPrintedBy = _session.GetLogin().GetUser().GetUserName();
             invoice.LastPrintedBy = _user.GetUserName();
-
-
             _database.Save();
-
-            //var invoice = _container
-            //    .Get<IDatabase>()
-            //    .GetInvoice(invoiceId);
-
-            //_container.Get<IInvoiceWriter>()
-            //    .Write(invoice);
-
-            //invoice.LastPrintedBy = _container
-            //    .Get<ISession>()
-            //    .GetLogin()
-            //    .GetUser()
-            //    .GetUserName();
-
-            //_container
-            //    .Get<IDatabase>()
-            //    .Save();
         }
     }
 }
