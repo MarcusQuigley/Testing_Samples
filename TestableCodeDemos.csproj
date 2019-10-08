@@ -80,6 +80,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Project4\After\IPrintInvoiceCommand.cs" />
+    <Compile Include="Project4\After\IUser.cs" />
+    <Compile Include="Project4\Before\PrintInvoiceCommand.cs" />
+    <Compile Include="Project4\Shared\Container.cs" />
+    <Compile Include="Project4\Shared\IDatabase.cs" />
+    <Compile Include="Project4\Shared\IdentityService.cs" />
+    <Compile Include="Project4\Shared\IIdentityService.cs" />
+    <Compile Include="Project4\Shared\IInvoiceWriter.cs" />
+    <Compile Include="Project4\Shared\Invoice.cs" />
+    <Compile Include="Project4\Shared\InvoiceStatus.cs" />
+    <Compile Include="Project4\Shared\ISession.cs" />
+    <Compile Include="Project4\Shared\Login.cs" />
+    <Compile Include="Project4\Shared\Session.cs" />
+    <Compile Include="Project4\Shared\User.cs" />
     <Compile Include="Project3\After\IInvoiceWriter.cs" />
     <Compile Include="Project3\After\IPrintInvoiceCommand.cs" />
     <Compile Include="Project3\After\PrintInvoiceCommand.cs" />
