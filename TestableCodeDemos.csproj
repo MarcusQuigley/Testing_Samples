@@ -80,6 +80,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Project4\After\IPrintInvoiceCommand.cs" />
+    <Compile Include="Project4\After\IUser.cs" />
     <Compile Include="Project4\Before\PrintInvoiceCommand.cs" />
     <Compile Include="Project4\Shared\Container.cs" />
     <Compile Include="Project4\Shared\IDatabase.cs" />

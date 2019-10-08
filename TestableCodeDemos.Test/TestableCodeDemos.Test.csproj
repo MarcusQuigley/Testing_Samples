@@ -18,8 +18,4 @@
     <ProjectReference Include="..\TestableCodeDemos.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Project4\" />
-  </ItemGroup>
-
 </Project>
