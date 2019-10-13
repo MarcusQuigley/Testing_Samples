@@ -80,6 +80,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Project6\After\BaseInvoiceCommand.cs" />
+    <Compile Include="Project6\After\EmailInvoiceCommand.cs" />
+    <Compile Include="Project6\Before\PrintOrEmailInvoiceCommand.cs" />
+    <Compile Include="Project6\Before\PrintOrEmailInvoiceCommandTests.cs" />
+    <Compile Include="Project6\After\PrintInvoiceCommand.cs" />
+    <Compile Include="Project6\Shared\Database.cs" />
+    <Compile Include="Project6\Shared\EmailAddressIsBlankException.cs" />
+    <Compile Include="Project6\Shared\IDatabase.cs" />
+    <Compile Include="Project6\Shared\IEmailValidator.cs" />
+    <Compile Include="Project6\Shared\IInvoiceEmailer.cs" />
+    <Compile Include="Project6\Shared\IInvoiceWriter.cs" />
+    <Compile Include="Project6\Shared\Invoice.cs" />
+    <Compile Include="Project6\Shared\InvoiceWriter.cs" />
+    <Compile Include="Project6\Shared\ISecurity.cs" />
+    <Compile Include="Project6\Shared\Security.cs" />
+    <Compile Include="Project6\Shared\UserNotAuthorizedException.cs" />
     <Compile Include="Project5\After\ISecurity.cs" />
     <Compile Include="Project5\After\PrintInvoiceCommand.cs" />
     <Compile Include="Project5\After\Security.cs" />
